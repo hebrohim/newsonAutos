@@ -14,10 +14,10 @@ const displayMenu = () =>{
     console.log("clicked")
    let linksContainer = document.querySelector(".links")
     
-    if (linksContainer.style.display === "none") {
-        linksContainer.style.display = "block";
-      } else {
+    if (linksContainer.style.display === "block") {
         linksContainer.style.display = "none";
+      } else {
+        linksContainer.style.display = "block";
       }
 
 }
