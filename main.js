@@ -16,8 +16,11 @@ const displayMenu = () =>{
     
     if (linksContainer.style.display === "block") {
         linksContainer.style.display = "none";
-      } else {
+        document.getElementById("toggle").innerHTML = "&#9776;"
+
+    } else {
         linksContainer.style.display = "block";
+        document.getElementById("toggle").innerHTML = "&#x2715"
       }
 
 }
