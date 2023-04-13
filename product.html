@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    #img {
+      width: 100vw;
+    }
+    #img img {
+      width: 100vw;
+    }
+
+    #features {
+      margin-top: 1%;
+      background-color:  #fdee1aec;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    color: white;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0.877)), url(2011_Toyota_Venza_--_NHTSA_2.jpg);
+    }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #tea{
+    display: grid;
+        /* background-color: aquamarine; */
+        width: 90vw;
+        height: 30vh;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+  }
+
+  .mal {
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+  }
+
+  .id {
+    /* background-color: blue; */
+    width: 70%;
+    align-items: center;
+    /* gap: 10px; */
+    flex-direction: column;
+    display: flex;
+  }
+
+  .id h5 {
+    /* font-size: 1.5rem; */
+  }
+  @media screen and (max-width:500px) {
+
+    #features {
+      margin-top: 1%;
+      background-color:  #fdee1aec;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: cover;
+    color: white;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0.877)), url(2011_Toyota_Venza_--_NHTSA_2.jpg);
+    }
+
+    #features h1{
+     font-size: 1.5rem;
+    }
+    #tea{
+    display: grid;
+        /* background-color: aquamarine; */
+        width: 60vw;
+        height: 65vh;
+        margin-top: -30%;
+        grid-template-columns: repeat(1,1fr);
+        /* gap: 10px; */
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+  }
+
+  #tea h2 {
+    font-size: 1rem;
+  }
+
+  
+  }
+  </style>
+</head>
+<body>
+  
+  <div>
+    
+  </div>
+  <div  id="img">
+    <img src="2011_Toyota_Venza_--_NHTSA_2.jpg" alt="">
+  </div>
+  <div>
+    
+  </div>
+
+<div class="container mt-3">
+
+<!-- <h2>Carousel</h2> -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="2011-toyota-venza-rear-passenger-seats-carbuzz-646395-1600.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="2011_toyota_venza_gearshift.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="2011_toyota_venza_frontseat.jpg" alt="New York" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="TOYOTA-Venza-4134_28.jpg" alt="New York" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="2011_toyota_venza_audiosystem" alt="New York" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="2011_toyota_venza_instrumentcluster" alt="New York" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="2011_toyota_venza_doorcontrols" alt="New York" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src=" 2011_toyota_venza_airvents" alt="New York" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="2011_toyota_venza_instrumentpanel" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+
+<div id="features">
+  <div >
+    <h1>PERFORMANCE</h1>
+  </div>
+    
+
+    <div id="tea">
+
+      <div class="id">
+        <h5>Make</h5>
+        <h2>Toyota</h2>
+       </div>
+
+       <div class="id">
+        <h5>Model</h5>
+        <h2>Venza</h2>
+       </div>
+
+
+       <div class="id">
+        <h5>Engine Type </h5>
+        <h2>Petrol (2.7L 4 ) </h2>
+       </div>
+       <!-- <HR></HR> -->
+       <div class="id">
+        <h5>Body Style</h5>
+        <h2>4DR SPORT</h2>
+       </div>
+ <!-- <HR></HR> -->
+       <div class="id">
+        <h5>Year</h5>
+        <h2>2011</h2>
+       </div>
+
+       <div class="id">
+        <h5>Drive</h5>
+        <h2>All  wheel drive</h2>
+       </div>
+        
+    </div>
+
+    <!-- <div id="feat">
+      <div class="mal">
+        <h4>Make</h4>
+        <h4>Toyota</h4>
+      </div>
+
+      <div class="mal">
+        <h4>Model</h4>
+        <h4>Venza</h4>
+      </div>
+
+      <div class="mal">
+        <h4>Body Stle</h4>
+        <h4>4DR SPOR</h4>
+      </div>
+
+      <div class="mal">
+        <h4>Engine</h4>
+        <h4>2.7L 4</h4>
+      </div>
+
+      <div class="mal">
+        <h4>Drive</h4>
+        <h4>All wheel drive</h4>
+      </div>
+
+      <div class="mal">
+        <h4>Fuel Type</h4>
+        <h4>Petrol</h4>
+      </div>
+
+      <div class="mal">
+        <h4>Color </h4>
+        <h4>Red</h4>
+      </div> -->
+
+      </div>
+
+      
+
+
+</body>
+</html>
