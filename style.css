@@ -46,9 +46,9 @@ body {
 }
 
 
-.hamburger {
+/* .hamburger {
     display: none;
-}
+} */
 
 
 .phone {
@@ -91,46 +91,42 @@ body {
     /* position: fixed; */
     margin: auto;
     /* z-index: 2; */
-    background-color:  black;
+    background-color:  rgba(0, 0, 0, 0.772);
+    color: white;
     height: 10vh;
     width: 100vw;
     /* background-color: blue; */
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.home {
-    display: flex;
-    width: 700px;
-    /* background-color: blue; */
-    align-items: center;
     justify-content: space-around;
-}
-
-.home a {
-    text-decoration: none;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    color: white;
-}
-
-a:hover {
-    color: white;
-}
-
-.mohe {
-    /* margin: auto; */
-    background-color:#fdee1a;
-    height: 50px;
-    text-align: center;
-    width: 70px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 5px;
 }
+#toggle{
+    font-size: 1.5rem;
+    color: #fdee1a;
+    display: none;
+}
+.links{
+    list-style-type: none;
+   
+    
+    /* width: 20vw; */
+    
+}
+.links >li{
+    padding-right: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+   display: inline;
+
+}
+.links >li>a {
+   color: white;
+   text-decoration: none;
+   
+  
+}
+
+
 
 .car {
     margin: auto;
@@ -148,9 +144,9 @@ a:hover {
     border: 1px solid black;
 }
 
-.ch:hover {
+/* .ch:hover {
     background-color: #fdee1a;
-}
+} */
 
 .get {
     /* background-image: url(Frame\ 85\ \(1\).png); */
@@ -687,10 +683,6 @@ hr {
     color: white;
 }
 
-a:hover {
-    color: #fdee1a;
-}
-
 .open {
     height: 19%;
     display: flex;
@@ -781,9 +773,7 @@ a:hover {
     color: white;
 }
 
-a:hover {
-    color: #fdee1a;
-}
+
 .foo {
     display: flex;
     width: 40%;
@@ -993,9 +983,7 @@ color: black;
         width: 100vw;
        /* display: block;  */
     }
-    .home {
-        display: none;
-    }
+  
 
     .navbar {
         display: flex;
@@ -1497,7 +1485,7 @@ hr {
     border: 3px solid  #fdee1a;
     cursor: pointer;
     position: relative;
-    background-color: transparent;
+    background-color: transparent;hover
     text-decoration: none;
     overflow: hidden;
     z-index: 1;
@@ -1527,12 +1515,15 @@ hr {
 }
 
 
-/* } */
+@media only screen and (max-width: 600px) {
+  #toggle{
+   display: flex;
+  }
+  .links{
+    display: none;
+  }
 
-/* @media screen and (min-width:800px) {
-    #nav {
-        background-color: aqua;
-    }
-
-
-} */
+  .links >li >a {
+    font-size: .6rem;
+  }
+  }

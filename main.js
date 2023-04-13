@@ -1,9 +1,23 @@
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+{/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> */}
 
 
-window.onload = function () {
-    window.addEventListener('scroll',) 
-    // window.addEventListener ('scroll', function)
+// window.onload = function () {
+//     window.addEventListener('scroll',) 
+//     // window.addEventListener ('scroll', function)
 
-    const
+    
+// }
+
+
+
+const displayMenu = () =>{
+    console.log("clicked")
+   let linksContainer = document.querySelector(".links")
+    
+    if (linksContainer.style.display === "none") {
+        linksContainer.style.display = "block";
+      } else {
+        linksContainer.style.display = "none";
+      }
+
 }
